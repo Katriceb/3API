@@ -1,0 +1,87 @@
+Daily cat facts! 
+https://alexwohlbruck.github.io/cat-facts/docs/
+
+
+1.Is an API key required? no
+
+2.What is the base url? https://cat-fact.herokuapp.com
+
+3.What is one endpoint that you could use in the api?/facts Retrieve and query facts ./users* Get user data
+
+4.For the endpoint that you chose, provide an example of the data you get back in the response.
+
+ Fact An animal fact, User A user of the Cat Facts site
+
+
+
+
+https://disneyapi.dev/docs/
+
+1.Is an API key required?  This API is GET only and no authentication is required to access it.
+
+2.What is the base url?https://api.disneyapi.dev
+
+3.What is one endpoint that you could use in the api?
+Get all characters https://api.disneyapi.dev/character
+Get one character https://api.disneyapi.dev/character/308
+Filter characters https://api.disneyapi.dev/character?name=Mickey%20Mouse
+
+4.For the endpoint that you chose, provide an example of the data you get back in the response.
+Get all characters
+Get the list of all characters using the /character endpoint.
+Get one character Get the details about one character using the character/:id endpoint.
+Filter characters Filter a specific character using the character?params endpoint.
+
+Character
+There's a total of 7438 characters available
+
+Key	Type
+_id	Integer
+url	String
+name	String
+sourceUrl	String
+films	[String]
+shortFilms	[String]
+tvShows	[String]
+videoGames	[String]
+alignment	String
+parkAttractions	[String]
+allies	[String]
+enemies	[String]
+
+
+
+
+
+https://scripture.api.bible/livedocs
+https://scripture.api.bible/livedocs#/Bibles/getBible
+
+
+1.Is an API key required? yes
+
+648643516a6b127431a9bd4ccf6ab87a Add this as an api-key parameter to your API calls to report and authenticate.
+
+ / 9c5e9430caa8c7077c0d5c12b2ae76d1 Add this as an api-key parameter to your API calls to authenticate.
+2.What is the base url? api.scripture.api.bible   / https://api.scripture.api.bible/v1/swagger.json
+
+3.What is one endpoint that you could use in the api?
+Bibles
+Fetch Bibles and metadata 
+ /v1/bibles
+Verses
+Fetch Verses for a Bible 
+/v1​/bibles​/{bibleId}​/chapters​/{chapterId}​/verses
+Chapters
+Fetch Chapters for a Bible
+/v1/bibles/{bibleId}/books/{bookId}/chapters
+
+4.For the endpoint that you chose, provide an example of the data you get back in the response.
+https://scripture.api.bible/livedocs#/Bibles/getBible
+Fetch Chapters for a Bible
+Gets an array of Chapter objects for a given bibleId and bookId
+
+Fetch Verses for a Bible 
+Gets an array of Verse objects for a given bibleId and chapterId
+
+Fetch Bibles and metadata 
+Gets an array of Bible objects authorized for current API Key
