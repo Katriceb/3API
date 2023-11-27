@@ -31,6 +31,57 @@ Get all characters
 Get the list of all characters using the /character endpoint.
 Get one character Get the details about one character using the character/:id endpoint.
 Filter characters Filter a specific character using the character?params endpoint.
+{
+  "info": {
+    "totalPages": 149,
+    "count": 50,
+    "previousPage": "https://api.disneyapi.dev/character?page=3",
+    "nextPage": "https://api.disneyapi.dev/character?page=5",
+  },
+  "data": [
+    {
+      "_id":308,
+      "films":["Tangled","Tangled: Before Ever After"],
+      "shortFilms":["Tangled Ever After","Hare Peace"],
+      "tvShows":["Once Upon a Time","Tangled: The Series"],
+      "videoGames":["Disney Princess Enchanting Storybooks","Hidden Worlds","Disney Crossy Road","Kingdom Hearts III"],
+      "parkAttractions":["Celebrate the Magic","Jingle Bell, Jingle BAM!"],
+      "allies":[],
+      "enemies":[],
+      "sourceUrl":"https://disney.fandom.com/wiki/Queen_Arianna",
+      "name":"Queen Arianna",
+      "imageUrl":"https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg/revision/latest?cb=20160715191802",
+      "createdAt":"2021-04-12T01:33:34.458Z",
+      "updatedAt":"2021-04-12T01:33:34.458Z",
+      "url":"https://api.disneyapi.dev/characters/308",
+      "__v":0
+    }
+    ...
+  ],
+}
+{
+  "info": {
+    "count": 1
+  },
+  "data": {
+    "_id": 308,
+    "films": ["Tangled", "Tangled: Before Ever After"],
+    "shortFilms": ["Tangled Ever After", "Hare Peace"],
+    "tvShows": ["Once Upon a Time", "Tangled: The Series"],
+    "videoGames": [
+      "Disney Princess Enchanting Storybooks",
+      "Hidden Worlds",
+      "Disney Crossy Road",
+      "Kingdom Hearts III"
+    ],
+    "parkAttractions": ["Celebrate the Magic", "Jingle Bell, Jingle BAM!"],
+    "allies": [],
+    "enemies": [],
+    "name": "Queen Arianna",
+    "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg",
+    "url": "https://api.disneyapi.dev/characters/308"
+  }
+}
 
 Character
 There's a total of 7438 characters available
@@ -85,3 +136,40 @@ Gets an array of Verse objects for a given bibleId and chapterId
 
 Fetch Bibles and metadata 
 Gets an array of Bible objects authorized for current API Key
+
+
+{
+  "data": [
+    {
+      "id": "string",
+      "bibleId": "string",
+      "abbreviation": "string",
+      "name": "string",
+      "nameLong": "string",
+      "chapters": [
+        {
+          "id": "string",
+          "bibleId": "string",
+          "number": "string",
+          "bookId": "string",
+          "reference": "string"
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "data": [
+    {
+      "id": "string",
+      "bibleId": "string",
+      "bookId": "string",
+      "title": "string",
+      "firstVerseId": "string",
+      "lastVerseId": "string",
+      "firstVerseOrgId": "string",
+      "lastVerseOrgId": "string"
+    }
+  ]
+}
